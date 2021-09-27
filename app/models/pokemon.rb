@@ -2,7 +2,7 @@ class Pokemon < ApplicationRecord
     
     def self.api_call 
         pokemons = []
-        response = HTTParty.get("https://pokeapi.co/api/v2/pokemon?limit=20&offset=1")
+        response = HTTParty.get("https://pokeapi.co/api/v2/pokemon?limit=12&offset=1")
         response = JSON.parse(response.body)
         response.each do |k, value|
             if k == "results"
