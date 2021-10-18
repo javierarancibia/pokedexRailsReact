@@ -27,6 +27,7 @@ const PokemonDetail = (props) => {
         { pokemon.sprites ? <div>
           <img src={pokemon.sprites.front_default} alt={pokemon.name} width="250" />
           <img src={pokemon.sprites.back_default} alt={pokemon.name} width="250" />
+           <img src={pokemon.sprites.back_default} alt={pokemon.name} width="250" />
           </div>  : ' '}
         <Card.ImgOverlay>
           <Card.Title>{ pokemon.species ?  <h1>{pokemon.species.name }</h1> : ' ' }</Card.Title>
